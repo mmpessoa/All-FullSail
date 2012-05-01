@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Cryptid Keeper</title>
+
+<!--  Basic meta data info -->
+<meta name="description" content="Project 3 for MIU-1203" />
+<meta name="keywords" content="HTML 5, mobile development, Full Sail University" />
+
+<!-- Michelle M. Pessoa. MIU-1203. Project 3. 17 March 2012. -->
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on" />
+
+<!-- StyleSheets under here -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/> 
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/libs/modernizr.custom.min.js"></script>
+</head>
+<body>
+
+<!--Home Section -->
+
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed">
+    <h1>Cryptid Keeper</h1>
+  </div>
+  <div data-role="content">
+    <p>The Crypid Keeper is an app that allows you to quickly report the sighting of a cryptid such as a bigfoot, sea monster or chupacabra.</p>
+    <p><a href="#additem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Report a sighting</a></p>
+    <p><a href="#news" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Read the latest news</a></p>
+    <p><a href="#bestiary" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">View the bestiary</a></p>
+    <p><a href="#videos" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Watch amazing videos</a></p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Add Item Form Section -->
+
+<div data-role="page" id="additem" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Report a Sighting</h1>
+  </div>
+  <div data-role="content">
+    <p>Have you seen something unusual? Tell us all about it!</p>
+    
+    <form action="" method="post" id="recordcryptidform">
+    
+    <div data-role="fieldcontain">
+    	<label for="reporternamefirst">First Name</label>
+    	<input type="text" name="reporternamefirst" id="reporternamefirst" class="required"/>
+    	<label for="reporternamelast">Last Name</label>
+    	<input type="text" name="reporternamelast" id="reporternamelast" class="required"/>
+    	<label for="reporteremail">Email</label>
+    	<input type="text" name="reporteremail" id="reporteremail" class="required email"/>
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<label for="sightingdate">Date</label>
+    	<input type="text" name="sightingdate" id="sightingdate" class="required date"/>
+    	<label for="cryptidlocation">Location</label>
+    	<input type="text" name="cryptidlocation" id="cryptidlocation" class="required"/>
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<label for="cryptidnumber">If multiple beings were seen, how many?</label>
+    	<input type="range" name="cryptidnumber" id="cryptidnumber" value="5" min="1" max="10" />
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<fieldset data-role="controlgroup">
+        	<legend>Gender of creature(s)?</legend>
+	    	<input type="radio" value="Male" name="cryptid-gender" id="cryptid-gender-1" class="required" />
+    		<label for="cryptid-gender-1">Male</label>
+	    	<input type="radio" value="Female" name="cryptid-gender" id="cryptid-gender-2" />
+    		<label for="cryptid-gender-2">Female</label>
+	    	<input type="radio" value="Unknown" name="cryptid-gender" id="cryptid-gender-3" />
+    		<label for="cryptid-gender-3">Unknown</label>
+         </fieldset>
+    </div>
+    
+    
+    <div data-role="fieldcontain">
+    		<label for="cryptid-sighting">Which cryptid did you see?</label>
+	    	<select name="cryptid-sighting" id="cryptid-sighting" data-native-menu="false" class="required" />
+            	<option data-placeholder="true" value>- Choose a Cryptid-</option>
+                <!--<optgroup label="Label 1">-->
+                 	<option value="alien">Alien</option>
+                	<option value="bigfoot">Bigfoot</option>
+                	<option value="chupacabra">Chupacabra</option>
+                <!--</optgroup>-->
+                 <!--<optgroup label="Label 2"> -->
+                	<option value="dinosaur">Dinosaur</option>
+                	<option value="fairy">Fairy</option>
+                	<option value="ghost">Ghost</option>
+                	<option value="mothmn">Mothman</option>
+                	<option value="seamonster">Sea Monster</option>
+                	<option value="vampire">Vampire</option>
+                	<option value="werewolf">Werewolf</option>
+                	<option value="other">Other</option>
+                <!--</optgroup> -->
+             </select>   
+    </div>
+    
+    <div data-role="fieldcontain">
+		<label for="encounter">Describe the encounter:</label>
+			<textarea name="encounter" id="encounter">
+Please describe the sighting in as much detail as possible.
+			</textarea>    
+     </div>
+        
+    <div data-role="fieldcontain">
+    	<label for="cryptidnews">Would you like to subscribe to our free email newsletter, <em>Tales from the Cryptids?</em></label>
+        <select data-role="slider" name="cryptidnews" id="cryptidnews">
+   		  <option value="off">No</option>
+    		<option value="on">Yes</option>
+        </select>
+    </div>
+    
+    
+    <div data-role="fieldcontain">
+    	<div class="ui-grid-a">
+    		<div class="ui-block-a"><input type="reset" value="Reset" data-theme="a" /></div>
+    		<div class="ui-block-b"><input type="submit" value="Submit" data-theme="b" /></div>
+        </div>    
+    </div>
+    
+    <a href="#recordcryptiderrors" id="rcerrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+    
+    </form>
+    
+  </div>
+
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!--News Section -->
+
+<div data-role="page" id="news" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>News</h1>
+  </div>
+  <div data-role="content">
+    <p>Read the latest news in the world of cryptids.</p>
+    <ul data-role="listview" data-filter="true">
+      <li> <a href="leadstory.html"> <img src="images/Ghost.png">
+        <h3>Ghost soldiers spotted near D.C.</h3>
+        <p>Witnesses report specters in Civil war garb.</p>
+        </a> </li>
+      <li> <a href="story2.html">Russians find ancient cells in Antarctic</a> </li>
+      <li><a href="story3.html">Genius octopus picks a lock!</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Bestiary Section -->
+
+<div data-role="page" id="bestiary" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Bestiary</h1>
+  </div>
+  <div data-role="content">
+    <p>View definitions of the most commonly reported cryptids.</p>
+    <ul data-role="listview" data-filter="true">
+      <li><a href="#">Aliens</a></li>
+      <li><a href="#">Bigfoot</a></li>
+      <li><a href="#">Chupacabra</a></li>
+      <li><a href="#">Modern Dinosaurs</a></li>
+      <li><a href="#">Fairies</a></li>
+      <li><a href="#">Ghosts</a></li>
+      <li><a href="#">The Mothman</a></li>
+      <li><a href="#">Sea and Lake Monsters</a></li>
+      <li><a href="#">Vampires</a></li>
+      <li><a href="#">Werewolves</a></li>
+      <li><a href="#">Everything Else</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Video Section -->
+
+<div data-role="page" id="videos" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Videos</h1>
+  </div>
+  <div data-role="content">
+    <p>View amazing videos from around the globe.</p>
+    <ul data-role="listview" data-filter="true">
+      <li><a href="#">Siberian Mammoth</a></li>
+      <li><a href="#">Lights Over Phoenix, AZ</a></li>
+      <li><a href="#">Lake Champlain's "Champ"</a></li>
+      <li><a href="#">Patterson-Gimlin Sasquatch</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Dialog Section -->
+
+<div data-role="dialog" id="recordcryptiderrors">
+  <div data-role="header" data-position="fixed">
+    <h1>Missing Fields</h1>
+  </div>
+  <div data-role="content">
+  	<ul>
+    	<li>Test</li>
+  	</ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript under here --> 
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script> 
+<!--<script type="text/javascript" src="js/json.js"></script>--> 
+ <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+ <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

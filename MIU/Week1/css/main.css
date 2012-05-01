@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* 
+Michelle M. Pessoa
+MIU 1203
+Project 2
+08 March 2012 
+CSS Document
+*/
+
+
+/* ~~ this container surrounds all other divs ~~ */
+
+#wrapper {
+	text-align: left;
+	width: 320px;
+	margin: 0 auto; /* Adding auto value on the sides centers the layout */
+	/* [disabled]background-color: white; */
+	overflow: visible; /* expands box  */
+}
+
+body {
+    background-color: #ddd; 
+	color: #222;
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	/* [disabled]line-height: 1.4; */
+}
+
+.header {
+    background-color: #ccc;
+    border-bottom: 1px solid #666;
+    color: #222;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+}
+
+textarea  {
+	background:#eee;
+	color:#778fbd;
+}
+
+blockquote {
+	font-style:normal;
+	text-align: justify;
+}
+
+h1 {
+	color: #222;
+	font-size: 24px;
+	text-align: center;
+}
+
+h2 {
+	color: #222;
+	font-size:16px;
+	text-align: center;
+}
+
+
+h3 {
+	color: #222;
+	font-size:18px;
+	text-align: left;
+}
+
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* I read somewhere that it's best practices to zero padding and margin on lists.  */
+	padding: 0;
+	margin: 0;
+}
+
+li { /* Removing bullets.  */
+	list-style-type: none;
+}
+
+
+h1, h2, p {
+	margin-top: 0;	 /* removing the top margin keeps elements from "escaping" their containing div. */
+	/* [disabled]padding-right: 15px; */
+	/* [disabled]padding-left: 15px; */
+}
+
+
+
+/* ~~ Styling for links  ~~ */
+a:link {
+	color: #333;
+	text-decoration: underline; /* Provides link underlines for quick visual identification */
+}
+
+a:visited {
+	color: #999;
+	text-decoration: underline;
+}
+
+a:hover, a:active, a:focus { /* Hover may not mean anything on a touch-based platform, but I've added here anyway. */
+	text-decoration: none;
+	color:black;
+}
+
+
+
+#footer {
+	margin-bottom: 12px;
+	clear: both;
+	font-size: 0.8em;
+	height: 20px;
+	vertical-align: middle;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	margin-top: 0;	 
+	text-align: center;
+}
+
+.centerstage {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#content {
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color: #FFF;
+}
+
+
+
+.center {
+	text-align: center;
+}
+
+
+
+.button {
+	padding: 6px;
+	border: 1px solid black;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	background-color: #efefef;
+	margin-right: 15px;
+	margin-left: 15px;
+	text-align: center;
+}

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Cryptid Keeper</title>
+
+<!--  Basic meta data info -->
+<meta name="description" content="Project 3 for MIU-1203" />
+<meta name="keywords" content="HTML 5, mobile development, Full Sail University" />
+
+<!-- Michelle M. Pessoa. MIU-1203. Project 3. 15 March 2012. -->
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on" />
+
+<!-- StyleSheets under here -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/libs/modernizr.custom.min.js"></script>
+</head>
+<body>
+
+<!--Home Section -->
+
+<div data-role="page" id="home">
+  <div data-role="header" data-position="fixed">
+    <h1>Cryptid Keeper</h1>
+  </div>
+  <div data-role="content">
+    <p>The Crypid Keeper is an app that allows you to quickly report the sighting of a cryptid such as a bigfoot, sea monster or chupacabra.</p>
+    <p><a href="#additem" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Report a sighting</a></p>
+    <p><a href="#news" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Read the latest news</a></p>
+    <p><a href="#bestiary" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">View the bestiary</a></p>
+    <p><a href="#videos" data-role="button" data-icon="arrow-r" data-iconpos="right" data-theme="b">Watch amazing videos</a></p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Add Item Form Section -->
+
+<div data-role="page" id="additem" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Report a Sighting</h1>
+  </div>
+  <div data-role="content">
+    <p>Have you seen something unusual? Tell us all about it!</p>
+    
+    <form action="" method="post" id="recordbootyform">
+    
+    <div data-role="fieldcontain">
+    	<label for="bootylocation">Location</label>
+    	<input type="text" name="bootylocation" id="bootylocation" />
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<label for="bootygold">Gold Found</label>
+    	<input type="range" name="bootygold" id="bootygold" value="0" min="1" max="10" />
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<label for="bootynatives">Natives Found?</label>
+        <select data-role="slider" name="bootynatives" id="bootynatives">
+    		<option value="off">No</option>
+    		<option value="on">Yes</option>
+        </select>
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<fieldset data-role="controlgroup">
+        	<legend> Your Role</legend>
+	    	<input type="radio" value="Swashbuckler" name="booty-role" id="booty-role-1" />
+    		<label for="booty-role-1">Swashbuckler</label>
+	    	<input type="radio" value="Musketeer" name="booty-role" id="booty-role-2" />
+    		<label for="booty-role-2">Musketeer</label>
+	    	<input type="radio" value="Cooper" name="booty-role" id="booty-role-3" />
+    		<label for="booty-role-3">Cooper</label>
+         </fieldset>
+    </div>
+    
+    <div data-role="fieldcontain">
+    	<fieldset data-role="controlgroup">
+        	<legend> Loot Found</legend>
+	    	<input type="checkbox" value="Pistols" name="booty-loot" id="booty-loot-1" />
+    		<label for="booty-loot-1">Pistols</label>
+	    	<input type="checkbox" value="Swords" name="booty-loot" id="booty-loot-2" />
+    		<label for="booty-loot-2">Swords</label>
+	    	<input type="checkbox" value="Rats" name="booty-loot" id="booty-loot-3" />
+    		<label for="booty-loot-3">Rats</label>
+         </fieldset>
+    </div>
+    
+    <div data-role="fieldcontain">
+    		<label for="booty-shipping">Shipping</label>
+	    	<select name="booty-shipping" id="booty-shipping" data-native-menu="false" />
+            	<option data-placeholder="true" value>Please Select One</option>
+                <optgroup label="FedEx">
+                	<option value="overnight">FedEx Overnight</option>
+                	<option value="express">FedEx Express</option>
+                	<option value="standard">FedEx Standard</option>
+                </optgroup>
+                <optgroup label="USPS">
+                	<option value="usps-overnight">USPS Overnight</option>
+                	<option value="usps-express">USPS Express</option>
+                	<option value="uspsstandard">USPS Standard</option>
+                </optgroup>
+             </select>   
+    </div>
+    
+    
+    
+    <div data-role="fieldcontain">
+    	<div class="ui-grid-a">
+    		<div class="ui-block-a"><input type="reset" value="Reset" data-theme="a" /></div>
+    		<div class="ui-block-b"><input type="submit" value="Submit" data-theme="b" /></div>
+        </div>    
+    </div>
+    
+    <a href="#recordbootyerrors" id="rberrorslink" data-rel="dialog" data-transition="slide"></a>
+    
+    </form>
+    
+  </div>
+
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!--News Section -->
+
+<div data-role="page" id="news" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>News</h1>
+  </div>
+  <div data-role="content">
+    <p>Read the latest news in the world of cryptids.</p>
+    <ul data-role="listview" data-filter="true">
+      <li> <a href="leadstory.html"> <img src="images/Ghost.png">
+        <h3>Ghost soldiers spotted near D.C.</h3>
+        <p>Witnesses report specters in Civil war garb.</p>
+        </a> </li>
+      <li> <a href="story2.html">Russians find ancient cells in Antarctic</a> </li>
+      <li><a href="story3.html">Genius octopus picks a lock!</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Bestiary Section -->
+
+<div data-role="page" id="bestiary" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Bestiary</h1>
+  </div>
+  <div data-role="content">
+    <p>View definitions of the most commonly reported cryptids.</p>
+    <ul data-role="listview" data-filter="true">
+      <li><a href="#">Aliens</a></li>
+      <li><a href="#">Bigfoot</a></li>
+      <li><a href="#">Chupacabra</a></li>
+      <li><a href="#">Modern Dinosaurs</a></li>
+      <li><a href="#">Fairies</a></li>
+      <li><a href="#">Ghosts</a></li>
+      <li><a href="#">The Mothman</a></li>
+      <li><a href="#">Sea and Lake Monsters</a></li>
+      <li><a href="#">Vampires</a></li>
+      <li><a href="#">Werewolves</a></li>
+      <li><a href="#">Everything Else</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--Video Section -->
+
+<div data-role="page" id="videos" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Videos</h1>
+  </div>
+  <div data-role="content">
+    <p>View amazing videos from around the globe.</p>
+    <ul data-role="listview" data-filter="true">
+      <li><a href="#">Siberian Mammoth</a></li>
+      <li><a href="#">Lights Over Phoenix, AZ</a></li>
+      <li><a href="#">Lake Champlain's "Champ"</a></li>
+      <li><a href="#">Patterson-Gimlin Sasquatch</a></li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#settings" data-icon="gear">Settings</a></li>
+        <li><a href="#search" data-icon="search">Search</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript under here --> 
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script> 
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script> 
+<script type="text/javascript" src="js/json.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
