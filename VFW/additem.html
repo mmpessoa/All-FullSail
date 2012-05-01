@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<!-- HTML DOCUMENT HEADER -->
+<head>
+<meta charset="utf-8"/>
+<meta name="description" content="Project 3 for VFW1202" />
+<meta name="keywords" content="HTML 5, mobile development, Full Sail University", "Visual Frameworks" />
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="user-scalable=no, width=device-width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+
+<!-- Michelle M. Pessoa. VFW-1202. Project 4. 23 February 2012. -->
+
+<!-- DOCUMENT TITLE -->
+<title>Report a Sighting</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+
+<body>
+<div id="wrapper"> 
+  
+  <!-- HEADING GROUP -->
+  <div id="header">
+    <header>
+      <hgroup>
+        <h1 class="header">Report a Sighting</h1>
+      </hgroup>
+    </header>
+  </div>
+  <!-- END HEADING GROUP --> 
+  
+  <!-- Navigation -->
+  <nav class="center"> <a href="#" id="clear">Clear Stored Data</a> <a href="#" id="displayLink">Display Stored Data</a> <a href="additem.html" id="addNew" style="display:none;">Add new sighting</a> </nav>
+  <!-- End Navigation --> 
+  
+  <!-- Form requirement. Removed the link to thankyou.html page so that JavaScript would work. -->
+  
+  <form action="#" method="post" id="contactForm" >
+    
+    <!-- Fieldset requirement. -->
+    
+    <fieldset id="contactFieldset">
+      <!-- Legend requirement. --> 
+      <!-- Label requirement. --> 
+      <!-- Text field requirement. -->
+      
+      <legend>Contact Information</legend>
+      <ul id="errors">
+      </ul>
+      <ul id="questions">
+        <li>
+          <label for="fname"><strong>First Name:</strong></label>
+          <input type="text" id="fname" placeholder="Enter first name." />
+        </li>
+        <li>
+          <label for="lname"><strong>Last Name:</strong></label>
+          <input type="text" id="lname" placeholder="Enter last name." />
+        </li>
+        <li>
+          <label for="email"><strong>Email: </strong></label>
+          <input type="email" id="email" placeholder="you@example.com" />
+        </li>
+      </ul>
+    </fieldset>
+    
+    <!-- Date field requirement. -->
+    
+    <fieldset>
+      <legend>Observations</legend>
+      <ul>
+        <li>
+          <label for="date"><strong>Date of sighting (YYYY-MM-DD): </strong></label>
+          <input name="date" id="date" type="date" placeholder="YYYY-MM-DD">
+        </li>
+        <p>
+        <li>
+          <label for="location"><strong>Location:</strong></label>
+          <input id="location" type="text" placeholder="Location of sighting.">
+        </li>
+      </ul>
+      <br/>
+      <!-- Drop down menu requirement. -->
+      <ul id="dropdown">
+        <li id="select">
+          <label for="groups"><strong>What did you see?</strong></label>
+          <br/>
+        </li>
+      </ul>
+      <p> 
+        <!-- Radio button requirement. -->
+      <ul>
+        <strong>Gender of creature?</strong><br/>
+        <li>
+          <input id="male" type="radio" value="Male" name="gender"/>
+          <label for= "male">Male</label>
+        </li>
+        <li>
+          <input id="female" type="radio" value="Female" name="gender"/>
+          <label for="female">Female</label>
+        </li>
+        <li>
+          <input name="gender" type="radio" id="unknown" value="Unknown" checked/>
+          <label for="unknown">Unknown</label>
+        </li>
+      </ul>
+      <br/>
+      <!-- Range slider requirement. -->
+      <ul>
+        <li> <strong>If multiple beings were seen, how many?</strong><br/>
+        </li>
+        <li> Number sighted (1-10):
+          <input type="range" name="number" id="number" min="1" max="10" />
+        </li>
+      </ul>
+      <br/>
+      <ul>
+        <li>
+          <label for="notes"><strong>Describe the encounter:</strong></label>
+        </li>
+      </ul>
+      <textarea id="notes" cols="35" rows="5" placeholder="Please describe the encounter."></textarea>
+      <p> 
+        
+        <!-- Checkbox requirement. -->
+      <ul>
+        <li> <strong>Would you like to subscribe to our free email newsletter, Tales from the Cryptids?</strong> </li>
+        <li>
+          <input type="checkbox" name="NewsletterCheckboxGroup" value="Yes" id="newsletter" />
+          <label for="newsletter">Yes!</label>
+        </li>
+      </ul>
+    </fieldset>
+    
+    <!-- Submit button requirement. --> 
+    
+    <input type="reset" value="Reset" id="reset"/>
+    <input type="submit" value="Save Sighting" id="submit"/>
+    <br/>
+  </form>
+  
+  <!-- Start Footer -->
+  <div id="footer"> &copy; 2012 <a href="http://www.michellepessoa.com" target="_blank">MichellePessoa.com</a>.  |
+    All Rights Reserved. </div>
+  <!-- End Footer --> 
+  
+  <script type="text/javascript" src="js/json.js"></script> 
+  <script type="text/javascript" src="js/main.js"></script> 
+</div>
+</body>
+</html>
