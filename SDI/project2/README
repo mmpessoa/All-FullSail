@@ -1,0 +1,23 @@
+Project 2 requirements:
+
+Use two of the three logical operators: 
+  AND: &&
+  OR: ||
+  NOT: !
+
+Include both a "for" loop and a "while" loop.
+
+Loop over an array and perform some kind of math or other logical function on the items in the array. For example, you could sum the values in the array, find an average or the minimum or maximum, count the occurrences of a specific item, or all of the numbers greater or lesser than the item.
+
+The project requires five functions:
+  •  One function that doesn't return a value (a procedure).
+  •  One function that takes two arguments and does some kind of Boolean comparison between them. The data type of the arguments doesn't matter for this function.
+  •  One function that does something interesting with strings, after taking two strings as arguments. This can be simple concatenation, but you are encouraged to look into other, more interesting string applications.
+  •  One function that takes a single number and uses it in a while loop somehow, doing some math at the same time. This can be something simple like counting or summing, but again you are encouraged to look into more interesting applications.
+  •	One function that takes an array and a number and uses them in a for loop of some kind. This should not be a simple index dereference (looking up one value by its index). Make it something more interesting.
+
+All functions in the project require arguments. Where marked simply "Argument," you can choose whatever data type.
+
+Provide four functions that return values. Those four values are the four basic data types that you've learned to this point -- Number, String, Boolean and Array. You must also provide at least one function that does not return a value (procedure).
+
+The submitted file must inclue the .js, .html, .css and the repository link.
