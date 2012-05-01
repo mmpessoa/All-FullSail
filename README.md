@@ -1,0 +1,4 @@
+All-FullSail
+============
+
+Consolidated folder.
