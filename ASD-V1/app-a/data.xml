@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<formdata>
+    <combo>
+        <value>1</value>
+        <text>Option 1</text>
+    </combo>
+    <combo>
+        <value>2</value>
+        <text>Option 2</text>
+    </combo>
+    <combo>
+        <value>3</value>
+        <text>Option 3</text>
+    </combo>
+    <combo>
+        <value>4</value>
+        <text>Option 4</text>
+    </combo>
+    <combo>
+        <value>5</value>
+        <text>Option 5</text>
+    </combo>
+</formdata>

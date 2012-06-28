@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ebooks>
+	<ebook>
+		<topic>Bigfoot</topic>
+		<title>In Pursuit of Bigfoot</title>
+		<author>Ernest Polmateer</author>
+		<price>0.99<price>
+	</ebook>
+</ebooks>
+<ebooks2>
+	<ebook2>
+		<topic>Alien</topic>
+		<title>Extreme UFO Briefing -- For Your Eyes Only</title>
+		<author>Chet Dembeck</author>
+		<price>1.00<price>
+	</ebook2>
+</ebooks2>
+<ebooks3>
+	<ebook3>
+		<topic>Chupacabra</topic>
+		<title>Tracking the Chupacabra: The Vampire Beast in Fact, Fiction, and Folklore</title>
+		<author>Benjamin Radford</author>
+		<price>17.38<price>
+	</ebook3>
+</ebooks3>
+<ebooks4>
+	<ebook4>
+		<topic>SeaMonster</topic>
+		<title>Lake Monsters</title>
+		<author>Joseph A. Citro</author>
+		<price>2.99<price>
+	</ebook4>
+</ebooks4>	
+<ebooks5>
+	<ebook5>
+		<topic>Fairy</topic>
+		<title>Fairies Among Us Nymphs, Elves, Earth Spirits, And Other Mythological Creatures</title>
+		<author>Gregory Branson-Trent</author>
+		<price>2.99<price>
+	</ebook5>
+</ebooks5>	
