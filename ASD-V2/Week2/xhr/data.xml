@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ebooks>
+
+	<ebook>
+		<topic>Aliens</topic>
+		<title>Extreme UFO Briefing -- For Your Eyes Only</title>
+		<author>Chet Dembeck</author>
+		<price currency="USD">1.00</price>
+	</ebook>
+
+	<ebook>
+		<topic>Bigfoot</topic>
+		<title>In Pursuit of Bigfoot</title>
+		<author>Ernest Polmateer</author>
+		<price currency="USD">0.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>Chupacabra</topic>
+		<title>Tracking the Chupacabra: The Vampire Beast in Fact, Fiction, and Folklore</title>
+		<author>Benjamin Radford</author>
+		<price currency="USD">17.38</price>
+	</ebook>
+
+	<ebook>
+		<topic>Dinosaurs</topic>
+		<title>Mokele-Mbembe-Legend of the Congo Dinosaur</title>
+		<author>Tim Votk</author>
+		<price currency="USD">3.00</price>
+	</ebook>
+
+	<ebook>
+		<topic>Fairies</topic>
+		<title>Fairies Among Us Nymphs, Elves, Earth Spirits, And Other Mythological Creatures</title>
+		<author>Gregory Branson-Trent</author>
+		<price currency="USD">2.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>Ghosts</topic>
+		<title>The Other Side: A Teen's Guide to Ghost Hunting and the Paranormal</title>
+		<author>Marley Gibson</author>
+		<price currency="USD">7.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>Mothman</topic>
+		<title>The Mothman Prophecies</title>
+		<author>John A. Keel</author>
+		<price currency="USD">6.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>SeaMonsters</topic>
+		<title>Field Guide to Lake Monsters, Sea Serpents, and Other Mystery Denizens of The Deep</title>
+		<author>Loren Coleman</author>
+		<price currency="USD">13.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>Vampires</topic>
+		<title>Creatures Of Legend: Vampires, Werewolves, Bigfoot And More</title>
+		<author>Gregory Branson-Trent</author>
+		<price currency="USD">2.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>Werewolves</topic>
+		<title>The Weiser Field Guide to Cryptozoology: Werewolves, Dragons, Skyfish, Lizard Men, and Other Fascinating Creatures Real and Mysterious</title>
+		<author>Deena West Budd</author>
+		<price currency="USD">9.99</price>
+	</ebook>
+
+	<ebook>
+		<topic>Other</topic>
+		<title>The Beasts that Hide from Man: Seeking the World's Last Undiscovered Animals</title>
+		<author>Karl P.N. Shuker</author>
+		<price currency="USD">9.99</price>
+	</ebook>
+	
+</ebooks>

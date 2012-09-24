@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>The Cryptid Keeper</title>
+        <!--  Basic meta data info -->
+<meta name="description" content="ASD-1207" />
+<meta name="keywords" content="HTML 5, mobile development, Full Sail University" />
+
+<!-- Michelle M. Pessoa. ASD-1207. Due 12 July 2012. -->
+<!-- Some artwork and icons purchased from Shutterstock.com -->
+<!-- Some icons by Glyphish. http://www.glyphish.com -->
+
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    </head>
+    <body>
+    
+<!--Home Section -->
+
+<div data-role="page" data-theme="e" id="home">
+  <div data-role="header" data-position="fixed">
+    <h1>Cryptid Keeper</h1>
+    <img src="images/cryptid_keeper_logo.png" alt="Cryptid Keeper Logo" width="320" height="50" /> </div>
+  <div data-role="content">
+    <div> <b> The Crypid Keeper </b> allows you to quickly report the sighting of a cryptid such as a bigfoot, sea monster or chupacabra. <br /><br />
+
+
+<!--External data link buttons -->
+
+            <div data-role="controlgroup" data-inline="true">
+                <a href="#" id="jsonbutton" data-role="button" data-transition="none" data-icon="refresh" data-iconpos="right">
+                    JSON
+                </a>
+                <a href="#" id="xmlbutton" data-role="button" data-transition="none" data-icon="refresh" data-iconpos="right">
+                    XML
+                </a>
+                <a href="#" id="csvbutton" data-role="button" data-transition="none" data-icon="refresh" data-iconpos="right">
+                    CSV
+                </a>
+                <div id="xhrstuff"></div>
+            </div>
+
+
+    </div>
+  </div>
+  
+<!--Footer -->  
+  
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#news" data-theme="a" data-icon="check"> News </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+     </ul>
+    </div>
+  </div>
+</div>
+    
+    
+
+<!--Add Item Form Section -->
+
+<div data-role="page" data-theme="e" id="additem">
+  <div data-role="header" data-position="fixed">
+    <h1>Cryptid Keeper</h1>
+    <img src="images/cryptid_keeper_logo.png" alt="Cryptid Keeper Logo" width="320" height="50" /> </div>
+
+  <div data-role="content">
+    <div> <b> Form </b>goes here.  <br /><br />
+    </div>
+  </div>
+
+
+
+
+
+<!--Footer -->  
+  
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#news" data-theme="a" data-icon="check"> News </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+     </ul>
+    </div>
+  </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+<!--News Section -->
+
+<div data-role="page" data-theme="e" id="news">
+  <div data-role="header" data-position="fixed">
+    <h1>Cryptid Keeper</h1>
+    <img src="images/cryptid_keeper_logo.png" alt="Cryptid Keeper Logo" width="320" height="50" /> </div>
+  <div data-role="content">
+    <div> <b> News </b>  <br /><br />
+     <figure> <img src="images/seamonster_cta.jpg" alt="photo" width="120" />
+        <figcaption>The Kraken: Fantasy, or fact?</figcaption>
+      </figure> 
+      <p><em>"There are an awful lot of scientists today who believe that before very long we shall have unraveled all the secrets of the universe. There will be no puzzles anymore. To me it'd be really, really tragic because I think one of the most exciting things is this feeling of mystery, feeling of awe, the feeling of looking at a little live thing and being amazed by it and how its emerged through these hundreds of years of evolution and there it is and it is perfect and why." </em><strong>- Jane Goodall</strong></p> 
+    </div>
+  </div>
+
+
+  
+<!--Footer -->  
+  
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#news" data-theme="a" data-icon="check"> News </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+     </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!--Bestiary Section -->
+
+<div data-role="page" data-theme="e" id="bestiary" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Bestiary</h1><img src="images/cryptid_keeper_logo.png" width="320" height="50" alt="Cryptid Keeper Logo" /> </div>
+  <div data-role="content">
+    <p>Click the links below to view definitions of the most commonly reported cryptids.</p>
+    <div data-role="collapsible-set" data-theme="" data-content-theme="d">
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Aliens </h3>
+        <p><em>"The only thing that scares me more than space aliens is the idea that there aren't any space aliens. We can't be the best that creation has to offer. I pray we're not all there is. If so, we're in big trouble."</em> <strong>- Ellen DeGeneres</strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Bigfoot </h3>
+        <p>Definition to be added.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Chupacabra </h3>
+        <p>Definition to be added.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Dinosaurs </h3>
+        <p>Definition to be added.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Fairies </h3>
+        <p><em>"FAIRY, n. A creature, variously fashioned and endowed, that formerly inhabited the meadows and forests. It was nocturnal in its habits, and somewhat addicted to dancing and the theft of children."</em> <strong>- Ambrose Bierce (1842 - 1914),</strong> <em>The Devil's Dictionary</em></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Ghosts </h3>
+        <p><em>"But psychoanalysis has taught that the dead—a dead parent, for example—can be more alive for us, more powerful, more scary, than the living. It is the question of ghosts."</em> <strong>- 
+          Jacques Derrida (1930 - 2004),</strong> Quoted in <em>New York Times,</em> January 23, 1994</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> The Mothman </h3>
+        <p>Definition to be added.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Sea & Lake Monsters </h3>
+        <p><em>"It is curious to note the old sea-margins of human thought. Each subsiding century reveals some new mystery; we build where monsters used to hide themselves."</em> - <strong>Henry Wadsworth Longfellow (1807 - 1882)</strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Vampires </h3>
+        <p>Definition to be added.</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Werewolves </h3>
+        <p><em>"WEREWOLF, n. A wolf that was once, or is sometimes, a man. All werewolves are of evil disposition, having assumed a bestial form to gratify a beastial appetite, but some, transformed by sorcery, are as humane as is consistent with an acquired taste for human flesh."</em> <strong>- Ambrose Bierce (1842 - 1914),</strong> <em>The Devil's Dictionary</em></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3> Everything Else </h3>
+        <p><em>"Battle not with monsters, lest ye become a monster, and if you gaze into the abyss, the abyss gazes also into you." -</em> <strong>Friedrich Nietzsche (1844 - 1900)</strong></p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#news" data-theme="a" data-icon="check"> News </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+      </ul>
+  </div>
+</div>
+    
+        
+        
+        
+<!-- JavaScript links   -->     
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script> 
+        <script type="text/javascript" src="js/getexternal.js"></script>
+    </div></body>
+</html>
