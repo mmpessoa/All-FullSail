@@ -95,7 +95,7 @@
    "_id": "subject:cryptid",
    "acronym": "cryp",
    "title": "Hidden Animals",
-   "comments": "Creatures whose existance is unproven through science"
+   "comments": "Creatures whose existence is unproven through science"
 }
 
 {
