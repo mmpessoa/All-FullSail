@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Cryptid Keeper</title>
+
+<!--  Basic meta data info -->
+<meta name="description" content="ASD-1210" />
+<meta name="keywords" content="HTML 5, mobile development, Full Sail University" />
+
+<!-- Michelle M. Pessoa. ASD-1210. Due 27 September 2012. -->
+<!-- Some artwork and icons purchased from Shutterstock.com -->
+
+<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Mobile IE needs ClearType for smoothing fonts -->
+<meta http-equiv="cleartype" content="on" />
+
+<!-- StyleSheets under here -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<link rel="stylesheet" href="css/jquery.ui.datepicker.mobile.css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+
+<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+<script src="js/libs/modernizr.custom.min.js"></script>
+</head>
+<body>
+
+<!--Home Section -->
+
+<div data-role="page" data-theme="e" id="home">
+  <div data-role="header" data-position="fixed">
+    <h1>Cryptid Keeper</h1><img src="images/cryptid_keeper_logo.png" alt="Cryptid Keeper Logo" width="320" height="50" /> </div>
+  <div data-role="content">
+    <div> <b> The Cryptid Keeper </b> allows you to quickly report the sighting of a cryptid such as a bigfoot, sea monster or chupacabra. <br />
+      <figure> <img src="images/seamonster_cta.jpg" alt="photo" width="120" />
+        <figcaption>The Kraken: Fantasy, or fact?</figcaption>
+      </figure>
+      <p><em>"There are an awful lot of scientists today who believe that before very long we shall have unraveled all the secrets of the universe. There will be no puzzles anymore. To me it'd be really, really tragic because I think one of the most exciting things is this feeling of mystery, feeling of awe, the feeling of looking at a little live thing and being amazed by it and how its emerged through these hundreds of years of evolution and there it is and it is perfect and why." </em><strong>- Jane Goodall</strong></p>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+     </ul>
+    </div></div>
+  </div>
+</div>
+
+<!--Add Item Form Section -->
+
+<div data-role="page" data-theme="e" id="additem" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Report a Sighting</h1><img src="images/cryptid_keeper_logo.png" width="320" height="50" alt="Cryptid Keeper Logo" /> </div>
+  <div data-role="content">
+    <p>Have you seen something unusual? Tell us all about it!</p>
+    <form action="" method="post" id="recordcryptidform">
+      <div data-role="fieldcontain">
+        <label for="reporternamefirst">First Name:</label>
+        <input type="text" name="reporternamefirst" id="reporternamefirst" class="required" placeholder="Jane"/>
+        <label for="reporternamelast">Last Name:</label>
+        <input type="text" name="reporternamelast" id="reporternamelast" class="required" placeholder="Doe"/>
+        <label for="reporteremail">Email:</label>
+        <input type="text" name="reporteremail" id="reporteremail" class="required email"  placeholder="you@me.com"/>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="sightingdate">Date:</label>
+        <input type="date" name="sightingdate" id="sightingdate" class="required date" placeholder="MM/DD/YYYY"/>
+        <label for="cryptidlocation">Location:</label>
+        <input type="text" name="cryptidlocation" id="cryptidlocation" class="required" placeholder="Anytown, USA"/>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="cryptidnumber">If multiple beings were seen, how many?</label>
+        <input type="range" name="cryptidnumber" id="cryptidnumber" value="5" min="1" max="10" />
+      </div>
+      <div data-role="fieldcontain">
+        <fieldset data-role="controlgroup">
+          <legend>Gender of creature(s)?</legend>
+          <input type="radio" value="Male" name="cryptid-gender" id="cryptid-gender-1" class="required" />
+          <label for="cryptid-gender-1">Male</label>
+          <input type="radio" value="Female" name="cryptid-gender" id="cryptid-gender-2" />
+          <label for="cryptid-gender-2">Female</label>
+          <input type="radio" value="Unknown" name="cryptid-gender" id="cryptid-gender-3" />
+          <label for="cryptid-gender-3">Unknown</label>
+        </fieldset>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="cryptid-type">Which cryptid did you see?</label>
+        <select name="cryptid-type" id="cryptid-type" data-native-menu="false" class="required" />
+        
+        <option data-placeholder="true" value>- Choose a Cryptid-</option>
+        <option value="alien">Alien</option>
+        <option value="bigfoot">Bigfoot</option>
+        <option value="chupacabra">Chupacabra</option>
+        <option value="dinosaur">Dinosaur</option>
+        <option value="fairy">Fairy</option>
+        <option value="ghost">Ghost</option>
+        <option value="mothman">Mothman</option>
+        <option value="seamonster">Sea Monster</option>
+        <option value="vampire">Vampire</option>
+        <option value="werewolf">Werewolf</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+      <div data-role="fieldcontain">
+        <label for="encounter">Describe the encounter:</label>
+        <textarea name="encounter" id="encounter">
+Please describe the sighting in as much detail as possible.
+			</textarea>
+      </div>
+
+      <!--Slider version of newsletter request -->
+
+<!--
+      <div data-role="fieldcontain">
+        <label for="cryptidnews">Would you like to subscribe to our free email newsletter, <em>Tales from the Cryptids?</em></label>
+        <select data-role="slider" name="cryptidnews" id="cryptidnews">
+          <option value="off">No</option>
+          <option value="on">Yes</option>
+        </select>
+      </div>
+-->      
+      
+<!--Checkbox version of newsletter request -->
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup">
+                               <legend>Would you like to subscribe to our free email newsletter, <em>Tales from the Cryptids?</em></legend>
+                               <input type="checkbox" name="checkbox-news" id="checkbox-news" data-mini="true" checked="checked" class="required"/>
+                               <label for="checkbox-news">Yes</label>
+                        </fieldset>
+                    </div>
+
+<!--Entry editing buttons -->
+
+                    
+<!--                    
+      <div data-role="fieldcontain">
+        <div class="ui-grid-a">
+          <div class="ui-block-a">
+            <input type="submit" value="Add Sighting" data-theme="b" />
+          </div>
+          <div class="ui-block-b">
+            <input type="reset" value="Reset Form" data-theme="a" />
+          </div>
+        </div>
+      </div>
+      
+-->     
+
+
+			  <div data role="fieldcontain" id="addSighting">
+			    <input type="submit" value="Add Sighting" id="submit" data-theme="b">    
+			  </div>
+
+			  <div data role="fieldcontain" id="editButton" style="display: none;">
+			    <input type="button" id="editSighting" value="Edit Sighting"  data-theme="e"> 
+			  </div>
+
+
+			  <div data role="fieldcontain">
+			    <input type="reset" value="Reset Form" id="reset" data-theme="a">    
+			  </div>
+
+
+ 
+      
+      <a href="#recordcryptiderrors" id="rcerrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+    </form>
+    
+    
+<!-- Button group for showing local storage -->
+    
+	<div data-role="controlgroup" data-type="horizontal"> 
+	<a href="#" data-role="button" data-theme="e" id="showData">Show recent sightings</a> 
+	<a href="#" data-role="button" data-theme="e" onclick="clearLocal(); location.reload();" id="clearLocal">Clear local storage</a>
+    </div>
+    
+<!-- Local storage will be loaded into this div -->
+		<div id="localStorageContainer">
+		</div>
+		
+		    
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+     </ul>
+    </div></div>
+  </div>
+</div>
+
+
+
+
+
+<!--Bestiary Section -->
+
+<div data-role="page" data-theme="e" id="bestiary" data-add-back-btn="true">
+  <div data-role="header" data-position="fixed">
+    <h1>Bestiary</h1><img src="images/cryptid_keeper_logo.png" width="320" height="50" alt="Cryptid Keeper Logo" /> </div>
+  <div data-role="content">
+    <p>Click the links below to view definitions of the most commonly reported cryptids.</p>
+    <div data-role="collapsible-set" data-theme="" data-content-theme="d">
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/alien.png" alt="alien" width="50" height="50" /> Aliens </h3>
+        <p><em>"The only thing that scares me more than space aliens is the idea that there aren't any space aliens. We can't be the best that creation has to offer. I pray we're not all there is. If so, we're in big trouble."</em> <strong>- Ellen DeGeneres</strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/bigfoot.png" alt="bigfoot" width="50" height="50" /> Bigfoot </h3>
+        <p><em>"They're practically sub-human, except that they still live like animals!"</em> <strong>- Joi Landis</strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/chupacabra.png" alt="chupacabra" width="50" height="50" /> Chupacabra </h3>
+        <p><em>"Hello, Mr. Chupacabra. You look like you're having a very bad night. Do you have a splinter in your paw? Perhaps we can help."</em> <strong>- Jackie </strong><em>(&quot;The Curse of El Chupacabra,&quot; Jackie Chan Adventures) </em></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/dinosaur.png" alt="dinosaur" width="50" height="50" /> Dinosaurs </h3>
+        <p><em>"Great white sharks, big storms - somehow, I think we like to be put in our place by awesome things. Dinosaurs do that."</em> <strong>- Sue Hendrickson,</strong> <em>Honolulu Advertiser, July 9, 2000</em></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/fairy.png" alt="fairy" width="50" height="50" /> Fairies </h3>
+        <p><em>"FAIRY, n. A creature, variously fashioned and endowed, that formerly inhabited the meadows and forests. It was nocturnal in its habits, and somewhat addicted to dancing and the theft of children."</em> <strong>- Ambrose Bierce (1842 - 1914),</strong> <em>The Devil's Dictionary</em></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/ghost.png" alt="ghost" width="50" height="50" /> Ghosts </h3>
+        <p><em>"But psychoanalysis has taught that the dead—a dead parent, for example—can be more alive for us, more powerful, more scary, than the living. It is the question of ghosts."</em> <strong>- 
+          Jacques Derrida (1930 - 2004),</strong> Quoted in <em>New York Times,</em> January 23, 1994</p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/mothman.png" alt="mothman" width="50" height="50" /> The Mothman </h3>
+        <p><em>"It seemed as though it had been lying down. It rose up slowly from the ground. A big gray thing. Bigger than a man with terrible glowing eyes."</em> <strong>- Marcella Bennett </strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/seamonster.png" alt="seamonster" width="50" height="50" /> Sea & Lake Monsters </h3>
+        <p><em>"It is curious to note the old sea-margins of human thought. Each subsiding century reveals some new mystery; we build where monsters used to hide themselves."</em> - <strong>Henry Wadsworth Longfellow (1807 - 1882)</strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/vampire.png" alt="vampire" width="50" height="50" /> Vampires </h3>
+        <p><em>"When other little girls wanted to be ballet dancers, I kind of wanted to be a vampire."</em> <strong>- Angelina Jolie </strong></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/werewolf.png" alt="werewolf" width="50" height="50" /> Werewolves </h3>
+        <p><em>"WEREWOLF, n. A wolf that was once, or is sometimes, a man. All werewolves are of evil disposition, having assumed a bestial form to gratify a bestial appetite, but some, transformed by sorcery, are as humane as is consistent with an acquired taste for human flesh."</em> <strong>- Ambrose Bierce (1842 - 1914),</strong> <em>The Devil's Dictionary</em></p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3><img src="images/other.png" alt="other" width="50" height="50" /> Everything Else </h3>
+        <p><em>"Battle not with monsters, lest ye become a monster, and if you gaze into the abyss, the abyss gazes also into you." -</em> <strong>Friedrich Nietzsche (1844 - 1900)</strong></p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+      </ul>
+  </div>
+</div>
+    
+        
+<!--Dialog Section -->
+
+<div data-role="dialog" id="recordcryptiderrors">
+  <div data-role="header" data-position="fixed">
+    <h1>Missing Fields</h1>
+  </div>
+  <div data-role="content">
+    <ul>
+      <li>Test</li>
+    </ul>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="foot">
+    <div data-role="navbar">
+      <ul>
+        <li> <a href="#home" data-theme="a" data-icon="home"> Home </a> </li>
+        <li> <a href="#additem" data-theme="a" data-icon="plus"> Add </a> </li>
+        <li> <a href="#bestiary" data-theme="a" data-icon="info"> Bestiary </a> </li>
+     </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript under here --> 
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script> 
+<script src="js/libs/jQuery.ui.datepicker.js"></script>
+<script src="js/libs/jquery.ui.datepicker.mobile.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

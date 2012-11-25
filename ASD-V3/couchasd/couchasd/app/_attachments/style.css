@@ -1,0 +1,38 @@
+/* 
+Michelle M. Pessoa
+ASD 1210
+Due: 18 October 2012 
+CSS Document
+*/
+
+label.error{
+	display:block;
+	margin:10px 0;
+	color:#C00;
+}
+
+#rcerrorslink{
+	display:none;
+}
+
+figure { 
+	width: 120px; 
+	float: right; 
+	margin: 0px 0px 20px 15px; 
+	padding: 0px 0px 0px 10px; 
+	border-left: 1px solid #ddd; 
+}
+
+figure figcaption { 
+	font-size: .8em; 
+	color: #777; 
+	line-height: .8em; 
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}

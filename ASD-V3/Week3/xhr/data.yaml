@@ -1,0 +1,264 @@
+/* 
+Michelle M. Pessoa
+YAML Document
+*/
+
+
+	cryptid01: 
+		fname: Michelle
+		lname: Pessoa
+		email: mpessoa@mac.com
+		date: 2012-02-17
+		location: Brooklyn
+		groups: Bigfoot
+		gender: Male
+		number: 1
+		notes: Scary.
+		newsletter: Yes
+	
+	
+	cryptid02: 
+		fname: Orlando
+		lname: Pessoa
+		email: mmpessoa@gmail.com
+		date: 2012-02-15
+		location: Georgia
+		groups: Alien
+		gender: Female
+		number: 2
+		notes: Pretty.
+		newsletter: No
+	
+
+	cryptid03: 
+		fname: Barbara
+		lname: Pessoa
+		email: bcpessoa@cs.com
+		date: 2012-02-15
+		location: Maine
+		groups: Chupacabra
+		gender: Female
+		number: 2
+		notes: Pretty.
+		newsletter: No
+	
+		
+	cryptid04: 
+		fname: Mark
+		lname: Hyacinth
+		email: mark@hyacinth.com
+		date: 2010-03-18
+		location: Virginia
+		groups: Dinosaur
+		gender: Unknown
+		number: 6
+		notes: It was very tall.
+		newsletter: Yes
+	
+	
+	cryptid05: 
+		fname: Shawn
+		lname: Carter
+		email: shawnc@gmail.com
+		date: 1999-11-03
+		location: Nova Scotia
+		groups: Fairy
+		gender: Male
+		number: 8
+		notes: Slimy.
+		newsletter: No
+	
+	
+	cryptid06: 
+		fname: Michelle
+		lname: Pessoa
+		email: mpessoa@mac.com
+		date: 2012-02-17
+		location: Brooklyn
+		groups: Ghost
+		gender: Male
+		number: 1
+		notes: Scary.
+		newsletter: Yes
+	
+	
+	cryptid07: 
+		fname: Orlando
+		lname: Pessoa
+		email: mmpessoa@gmail.com
+		date: 2012-02-15
+		location: Georgia
+		groups: Mothman
+		gender: Female
+		number: 2
+		notes: Pretty.
+		newsletter: No
+	
+	
+	cryptid08: 
+		fname: Mark
+		lname: Hyacinth
+		email: mark@hyacinth.com
+		date: 2010-03-18
+		location: Virginia
+		groups: SeaMonster
+		gender: Unknown
+		number: 6
+		notes: It was very tall.
+		newsletter: Yes
+	
+	
+	cryptid09: 
+		fname: Shawn
+		lname: Carter
+		email: shawnc@gmail.com
+		date: 1999-11-03
+		location: Nova Scotia
+		groups: Vampire
+		gender: Male
+		number: 2
+		notes: They were extremely ugly. Kinda like Nosferatu.
+		newsletter: No
+	
+	
+	cryptid10: 
+		fname: Shawn
+		lname: Carter
+		email: shawnc@gmail.com
+		date: 1999-11-03
+		location: Nova Scotia
+		groups: Werewolf
+		gender: Male
+		number: 4
+		notes: I saw them coming out of a manhole. Who knows what they were up to?
+		newsletter: No
+	
+	
+	cryptid11: 
+		fname: Rose
+		lname: Scotto
+		email: rgscotto@mac.com
+		date: 2012-02-03
+		location: Mt. Vernon
+		groups: Other
+		gender: Female
+		number: 1
+		notes: The creature I saw was undead of some kind. Maybe a ghoul or a zombie?
+		newsletter: Yes
+	
+	
+	cryptid12: 
+		fname: Jerome
+		lname: Cruz
+		email: jcruz@uvm.edu
+		date: 2009-10-15
+		location: Las Vegas
+		groups: Other
+		gender: Male
+		number: 2
+		notes: They were a lot like robots. I don't think they were aliens. Probably Army prototypes.
+		newsletter: No
+	
+	
+	cryptid13: 
+		fname: Carolina
+		lname: Wu
+		email: cwu@hotmail.com
+		date: 1985-10-16
+		location: Maryland
+		groups: Werewolf
+		gender: Unknown
+		number: 9
+		notes: I saw a pack of wolf-dog things chasing down a deer.
+		newsletter: Yes
+	
+	
+	cryptid14: 
+		fname: Chad
+		lname: Razor
+		email: chadrazor@excite.com
+		date: 2003-05-17
+		location: Providence RI
+		groups: Vampire
+		gender: Female
+		number: 8
+		notes: They attacked some homeless people. It was horrifying.
+		newsletter: No
+	
+	
+	cryptid15: 
+		fname: Sanjay
+		lname: Gupta
+		email: sgupta62@yahoo.com
+		date: 1986-08-03
+		location: Burlington VT
+		groups: SeaMonster
+		gender: Unknown
+		number: 3
+		notes: I saw three snake-like creatures swimming in Lake Champlain.
+		newsletter: No
+	
+	
+	cryptid16: 
+		fname: Rob
+		lname: Grimm
+		email: grimmrob@me.com
+		date: 2011-07-30
+		location: Kentucky
+		groups: Mothman
+		gender: Unknown
+		number: 1
+		notes: It swooped down on my car. I nearly crashed. It was large and black.
+		newsletter: Yes
+	
+	
+	cryptid17: 
+		fname: Randall
+		lname: Solan
+		email: bishop80@gmail.com
+		date: 2012-03-01
+		location: West Virginia
+		groups: Ghost
+		gender: Unknown
+		number: 1
+		notes: I did not see it but it pinched me twice.
+		newsletter: No
+	
+	
+	cryptid18: 
+		fname: Dillon
+		lname: Torvold
+		email: dillon@aol.com
+		date: 2000-01-28
+		location: New Jersey
+		groups: Fairy
+		gender: Unknown
+		number: 6
+		notes: My best guess is that they were gnomes.
+		newsletter: Yes
+	
+	
+	cryptid19: 
+		fname: Chris
+		lname: Lowen
+		email: clowen@mac.com
+		date: 1972-09-09
+		location: Arizona
+		groups: Dinosaur
+		gender: Male
+		number: 1
+		notes: It may have been a T-Rex.
+		newsletter: No
+	
+	
+	cryptid20: 
+		fname: Shawn
+		lname: Carter
+		email: shawnc@gmail.com
+		date: 1999-11-03
+		location: Nova Scotia
+		groups: Chupacabra
+		gender: Male
+		number: 1
+		notes: It was bigger than a pony.
+		newsletter: No

@@ -1,0 +1,240 @@
+{ "jsonList": 
+[{"fname":"Michelle",
+		"lname":"Pessoa",
+		"email": "mpessoa@mac.com",
+		"date": "2012-02-17",
+		"location": "Brooklyn",
+		"groups": "Bigfoot",
+		"number": "1",
+		"notes": "Scary.",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Orlando",
+		"lname": ["Last Name:", "Pessoa",
+		"email": "mmpessoa@gmail.com",
+		"date": "2012-02-15",
+		"location": "Georgia",
+		"groups": "Alien",
+		"number": "2",
+		"notes": "Pretty.",
+		"newsletter": "No"
+	},
+
+	 {
+		"fname": ["First Name:", "Barbara",
+		"lname": ["Last Name:", "Pessoa",
+		"email": "bcpessoa@cs.com",
+		"date": "2012-02-15",
+		"location": "Maine",
+		"groups": "Chupacabra",
+		"number": "2",
+		"notes": "Pretty.",
+		"newsletter": "No"
+	},
+		
+	 {
+		"fname": ["First Name:", "Mark",
+		"lname": ["Last Name:", "Hyacinth",
+		"email": "mark@hyacinth.com",
+		"date": "2010-03-18",
+		"location": "Virginia",
+		"groups": "Dinosaur",
+		"number": "6",
+		"notes": "It was very tall.",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Shawn",
+		"lname": ["Last Name:", "Carter",
+		"email": "shawnc@gmail.com",
+		"date": "1999-11-03",
+		"location": "Nova Scotia",
+		"groups": "Fairy",
+		"number": "8",
+		"notes": "Slimy.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Michelle",
+		"lname": ["Last Name:", "Pessoa",
+		"email": "mpessoa@mac.com",
+		"date": "2012-02-17",
+		"location": "Brooklyn",
+		"groups": "Ghost",
+		"number": "1",
+		"notes": "Scary.",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Orlando",
+		"lname": ["Last Name:", "Pessoa",
+		"email": "mmpessoa@gmail.com",
+		"date": "2012-02-15",
+		"location": "Georgia",
+		"groups": "Mothman",
+		"number": "2",
+		"notes": "Pretty.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Mark",
+		"lname": ["Last Name:", "Hyacinth",
+		"email": "mark@hyacinth.com",
+		"date": "2010-03-18",
+		"location": "Virginia",
+		"groups": "SeaMonster",
+		"number": "6",
+		"notes": "It was very tall.",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Shawn",
+		"lname": ["Last Name:", "Carter",
+		"email": "shawnc@gmail.com",
+		"date": "1999-11-03",
+		"location": "Nova Scotia",
+		"groups": "Vampire",
+		"number": "2",
+		"notes": "They were extremely ugly. Kinda like Nosferatu.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Shawn",
+		"lname": ["Last Name:", "Carter",
+		"email": "shawnc@gmail.com",
+		"date": "1999-11-03",
+		"location": "Nova Scotia",
+		"groups": "Werewolf",
+		"number": "4",
+		"notes": "I saw them coming out of a manhole. Who knows what they were up to?",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Rose",
+		"lname": ["Last Name:", "Scotto",
+		"email": "rgscotto@mac.com",
+		"date": "2012-02-03",
+		"location": "Mt. Vernon",
+		"groups": "Other",
+		"number": "1",
+		"notes": "The creature I saw was undead of some kind. Maybe a ghoul or a zombie?",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Jerome",
+		"lname": ["Last Name:", "Cruz",
+		"email": "jcruz@uvm.edu",
+		"date": "2009-10-15",
+		"location": "Las Vegas",
+		"groups": "Other",
+		"number": "2",
+		"notes": "They were a lot like robots. I don't think they were aliens. Probably Army prototypes.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Carolina",
+		"lname": ["Last Name:", "Wu",
+		"email": "cwu@hotmail.com",
+		"date": "1985-10-16",
+		"location": "Maryland",
+		"groups": "Werewolf",
+		"number": "9",
+		"notes": "I saw a pack of wolf-dog things chasing down a deer.",
+		"newsletter": "Yes"
+	},
+	
+	"cryptid14": {
+		"fname": ["First Name:", "Chad",
+		"lname": ["Last Name:", "Razor",
+		"email": "chadrazor@excite.com",
+		"date": "2003-05-17",
+		"location": "Providence, RI",
+		"groups": "Vampire",
+		"number": "8",
+		"notes": "They attacked some homeless people. It was horrifying.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Sanjay",
+		"lname": ["Last Name:", "Gupta",
+		"email": "sgupta62@yahoo.com",
+		"date": "1986-08-03",
+		"location": "Burlington, VT",
+		"groups": "SeaMonster",
+		"number": "3",
+		"notes": "I saw three snake-like creatures swimming in Lake Champlain.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Rob",
+		"lname": ["Last Name:", "Grimm",
+		"email": "grimmrob@me.com",
+		"date": "2011-07-30",
+		"location": "Kentucky",
+		"groups": "Mothman",
+		"number": "1",
+		"notes": "It swooped down on my car. I nearly crashed. It was large and black.",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Randall",
+		"lname": ["Last Name:", "Solan",
+		"email": "bishop80@gmail.com",
+		"date": "2012-03-01",
+		"location": "West Virginia",
+		"groups": "Ghost",
+		"number": "1",
+		"notes": "I did not see it, but it pinched me twice.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Dillon",
+		"lname": ["Last Name:", "Torvold",
+		"email": "dillon@aol.com",
+		"date": "2000-01-28",
+		"location": "New Jersey",
+		"groups": "Fairy",
+		"number": "6",
+		"notes": "My best guess is that they were gnomes.",
+		"newsletter": "Yes"
+	},
+	
+	 {
+		"fname": ["First Name:", "Chris",
+		"lname": ["Last Name:", "Lowen",
+		"email": "clowen@mac.com",
+		"date": "1972-09-09",
+		"location": "Arizona",
+		"groups": "Dinosaur",
+		"number": "1",
+		"notes": "It may have been a T-Rex.",
+		"newsletter": "No"
+	},
+	
+	 {
+		"fname": ["First Name:", "Shawn",
+		"lname": ["Last Name:", "Carter",
+		"email": "shawnc@gmail.com",
+		"date": "1999-11-03",
+		"location": "Nova Scotia",
+		"groups": "Chupacabra",
+		"number": "1",
+		"notes": "It was bigger than a pony.",
+		"newsletter": "No"
+	}
+]}
