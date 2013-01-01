@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script src="my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h2>
+                    M. Pessoa
+                </h2>
+            </div>
+            <div data-role="content">
+                <ul data-role="listview" data-divider-theme="b" data-inset="true">
+                    <li data-role="list-divider" role="heading">
+                        Research
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page3" data-transition="slide">
+                            Week 1
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page4" data-transition="slide">
+                            Week 2
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page5" data-transition="slide">
+                            Week 3
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        Features
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page7" data-transition="slide">
+                            Geolocation
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page8" data-transition="slide">
+                            Camera
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page9" data-transition="slide">
+                            Notifications
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        APIs
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page10" data-transition="slide">
+                            Pinterest
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page11" data-transition="slide">
+                            Twitter
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page12" data-transition="slide">
+                            YouTube
+                        </a>
+                    </li>
+                    <li data-role="list-divider" role="heading">
+                        CRUD
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page13" data-transition="slide">
+                            GitHub Repro
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page13" data-transition="slide">
+                            Original App
+                        </a>
+                    </li>
+                    <li data-theme="c">
+                        <a href="#page13" data-transition="slide">
+                            Revised App
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+            </div>
+        </div>
+        <!-- week1 -->
+        <div data-role="page" id="page3">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Week 1
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Week 1
+                            <b>
+                                Discussion
+                            </b>
+                            : Industry Research, Project Intent&nbsp;
+                        </b>
+                    </p>
+                    <p>
+                        <em>
+                            What types of native features (on Android and iOS devices) would you be
+                            able to implement with the use of HTML/CSS/JS only?
+                        </em>
+                    </p>
+                    <p>
+                        Web apps can use the following features utilizing HTML, CSS and JS: Geolocation,
+                        Device Rotation, Device Orientation (accelerometer, magnetometer, gyroscope,
+                        compass), Touch Gestures (swipe, pinch, zoom), Offline Storage, access
+                        to Contacts, Notifications and Camera access.
+                    </p>
+                    <p>
+                        <em>
+                            What types of features do you think will pair well together in an app?
+                        </em>
+                    </p>
+                    <p>
+                        The notifications and contacts are a natural pairing. An alert or breaking
+                        news from your app can be sent to selected people in Contacts. The camera
+                        and geolocation pair well together in apps that have a “check in” social
+                        component, like FourSquare. Device Orientation and Touch Gestures pair
+                        well in game apps, especially racing games.
+                    </p>
+                    <p>
+                        <em>
+                            Please describe any design and functionality intentions you may have for
+                            your Demo app components this month.
+                        </em>
+                    </p>
+                    <p>
+                        I would like to integrate maps, geolocation, camera and notifications
+                        into my “Cryptid Keeper” app. The app is supposed to allow the user to
+                        record the sighting of a cryptid, like a sasquatch, or chupacabra, so the
+                        features I mentioned would fit well.
+                    </p>
+                    <p>
+                        <em>
+                            Briefly describe some past 'lessons learned' regarding workflow as it
+                            relates to research, design, development, etc.
+                        </em>
+                    </p>
+                    <p>
+                        The number one lesson learned for me is to manage my time so that I can
+                        ask questions before the assignment is due. I research apps by searching
+                        through the iTunes store for apps with similar functionality so I can get
+                        a sense of what features potential competitors are offering.
+                    </p>
+                    <p>
+                        Sometimes I come up with a design by taking screen captures of interfaces
+                        I like and rearranging them in Photoshop, and sometimes I just sketch out
+                        my ideas on paper with markers. If I’m stuck, I look at the O’Reilly mobile
+                        design patterns book to remind myself of industry-standard best practices.
+                    </p>
+                    <p>
+                        I hate flow charts, so I don’t bother with that anymore. Instead I make
+                        storyboards to work out the interactivity and workflow.
+                    </p>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page3" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Week 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page4" data-theme="" data-icon="">
+                                Week 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page5" data-theme="" data-icon="">
+                                Week 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- week2 -->
+        <div data-role="page" id="page4">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Week 2
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Week 2 Discussion: Accessibility&nbsp;
+                        </b>
+                    </p>
+                    <p>
+                        Read through the information provided in this Discussion and refer to
+                        your research as you answer the following questions:
+                    </p>
+                    <ol>
+                        <li>
+                            What are some of the ways that you could change your HTML on your Demo
+                            app to be more accessible? (Remember, you can use the Section tag with
+                            jQuery, for instance)
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            Visit a video service on the web (like YouTube) and search for "Screen
+                            Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations
+                            (or common support mechanisms) that you see among the examples that are
+                            given - how could you fix them (or use them)?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            Devices: Please list two devices (and some of their features) that are
+                            made specifically to support Accessibility.
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            Mobile Apps: Please list two apps (either Android or iOS, or both) that
+                            are made specifically to support Accessibility.
+                        </li>
+                    </ol>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page3" data-theme="" data-icon="">
+                                Week 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page4" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Week 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page5" data-theme="" data-icon="">
+                                Week 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- week3 -->
+        <div data-role="page" id="page5">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Week 3
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Week 3&nbsp;
+                            <b>
+                                Discussion: Market Research
+                            </b>
+                        </b>
+                    </p>
+                    <p>
+                        For this activity, please reply to this discussion, answering the following
+                        questions:
+                    </p>
+                    <ol>
+                        <li>
+                            What are the 'top selling' app categories in the U.S.?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            What are the 'top selling' app categories in Japan?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            What are the 'top selling' app categories in Great Britain?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            Based on your three answers above, what might you infer about each of
+                            the markets listed?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            What percentage of Android users have the latest/greatest OS in the U.S?
+                            in Japan? in Great Britain? How might these differences impact development?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            What is the average cost and bandwidth limits per user (in general) in
+                            each of the three markets? How may this impact development?
+                            <br>
+                            <br>
+                        </li>
+                        <li>
+                            And, finally, what would be your suggested strategy in project topic and
+                            global market choice? Feel free to have a first and second choice.
+                        </li>
+                    </ol>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page3" data-theme="" data-icon="">
+                                Week 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page5" data-theme="" data-icon="">
+                                Week 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page3" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Week 3
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- geo -->
+        <div data-role="page" id="page7">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Geolocation
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Geolocation
+                        </b>
+                    </p>
+                    <p>
+                        Coming soon.
+                    </p>
+                </div>
+                <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn, NY&amp;zoom=14&amp;size=288x200&amp;markers=Brooklyn, NY&amp;sensor=false"
+                width="288" height="200">
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Geolocation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page8" data-theme="" data-icon="">
+                                Camera
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="">
+                                Notifications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- camera -->
+        <div data-role="page" id="page8">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Camera
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Camera
+                        </b>
+                    </p>
+                    <p>
+                        Coming soon.
+                    </p>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="">
+                                Geolocation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page8" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Camera
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page9" data-theme="" data-icon="">
+                                Notifications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- notifications -->
+        <div data-role="page" id="page9">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Notifications
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Notifications
+                        </b>
+                    </p>
+                    <p>
+                        Coming soon.
+                    </p>
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page7" data-theme="" data-icon="">
+                                Geolocation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page4" data-theme="" data-icon="">
+                                Camera
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page5" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Notifications
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- pin -->
+        <div data-role="page" id="page10">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Pinterest
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Pinterest feed
+                        </b>
+                    </p>
+                    <p>
+                        Coming soon.
+                    </p>
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 280px; height: 282px" src="http://digitalethos.org/wp-content/uploads/2012/10/Pinterest-Logo.jpg">
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Pinterest
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page11" data-theme="" data-icon="">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page12" data-theme="" data-icon="">
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- twitter -->
+        <div data-role="page" id="page11">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    Twitter
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            Twitter
+                            <b>
+                                &nbsp;feed
+                            </b>
+                        </b>
+                    </p>
+                    <p>
+                        Coming soon.
+                    </p>
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 256px; height: 256px" src="http://www.southdownhousing.org/cmsfiles/assets/2692.jpg">
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="">
+                                Pinterest
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page11" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page12" data-theme="" data-icon="">
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- youtube -->
+        <div data-role="page" id="page12">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    YouTube
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <p>
+                        <b>
+                            YouTube
+                            <b>
+                                &nbsp;feed
+                            </b>
+                        </b>
+                    </p>
+                    <p>
+                        Coming soon.
+                    </p>
+                </div>
+                <div style=" text-align:center">
+                    <img style="width: 256px; height: 256px" src="http://www.magicinkjet.com/uploadedfiles/youtube_logo.png">
+                </div>
+                <div data-role="navbar" data-iconpos="top">
+                    <ul>
+                        <li>
+                            <a href="#page10" data-theme="" data-icon="">
+                                Pinterest
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page11" data-theme="" data-icon="">
+                                Twitter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#page12" data-theme="" data-icon="" class="ui-btn-active ui-state-persist">
+                                YouTube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+            </div>
+        </div>
+        <!-- crud -->
+        <div data-role="page" id="page13">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-direction="reverse" data-theme="b" href="#page1"
+                data-icon="home" data-iconpos="left" class="ui-btn-left">
+                    Home
+                </a>
+                <h3>
+                    CRUD
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="collapsible-set" data-theme="b">
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            GitHub Repro
+                        </h3>
+                        <div>
+                            <a href="https://github.com/mmpessoa/ASD-V3.git" target="_blank" data-transition="fade">
+                                ASD Repro
+                            </a>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Original CRUD
+                        </h3>
+                        <div>
+                            <a href="http://mmpessoa.github.com/ASD-V3/Week4/index.html" target="_blank"
+                            data-transition="fade">
+                                ASD gh-pages
+                            </a>
+                        </div>
+                    </div>
+                    <div data-role="collapsible" data-collapsed="true">
+                        <h3>
+                            Revised CRUD
+                        </h3>
+                        <div>
+                            <a href="#page13" data-transition="fade">
+                                Coming soon
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    AVF-1212
+                </h3>
+            </div>
+        </div>
+        <script>
+              //App custom javascript
+        </script>
+    </body>
+
+</html>
