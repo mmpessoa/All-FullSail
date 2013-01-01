@@ -32,7 +32,7 @@ $("#additem").on('pageinit', function(){
 
 
 $('#submit').on('click', function saveSighting(id) {
-    //Declare form variables, generate a key to create unique ID.    
+    //Declare form variables, generate a key to create unique ID    
     var dt = new Date();
     var key =  (dt.getTime());
         var reporternamefirst =  $('#reporternamefirst').val();
@@ -41,7 +41,7 @@ $('#submit').on('click', function saveSighting(id) {
         var sightingdate =  $('#sightingdate').val();
         var cryptidlocation =  $('#cryptidlocation').val();
         var cryptidnumber =  $('#cryptidnumber').val();
-        var cryptid-type =  $('#cryptid-type').val();
+        var cryptidtype =  $('#cryptidtype').val();
         var encounter =  $('#encounter').val();
         var checkbox;
         if ($('#checkbox-news').is(":checked")){
@@ -52,17 +52,15 @@ $('#submit').on('click', function saveSighting(id) {
 
 //Create variable to load the data into Local Storage as a string
 
-    var cryptEntry = [reporternamefirst, reporternamelast, reporteremail, sightingdate, cryptidlocation, cryptidnumber, cryptid-type, encounter, checkbox];
-
+    var cryptEntry = [reporternamefirst, reporternamelast, reporteremail, sightingdate, cryptidlocation, cryptidnumber, cryptidtype, encounter, checkbox];
 //Add data to Local Storage giving a key and string
     localStorage.setItem(key, cryptEntry);
-
-//Reload page to load new form. Alert user that data was added.
+//Reload page to load new form. Alert user that data was added
     location.reload();
     alert("Your sighting has been logged.");
 });	
 
-//Toggle form on/off to display Local Storage data.
+//Toggle form on/off to display Local Storage data
 function toggleCtrl(t) {
     switch (t) {
     case "on":
@@ -76,13 +74,13 @@ function toggleCtrl(t) {
     }
 }
 
-//Load Local Storage data. 
+//Load Local Storage data 
 
 $('#showData').on('click', function getData() {
 	toggleCtrl("on"); 
     var getData = $('#localStorageContainer')[0];
     
-//For loop pulls key and string and separates by commas.
+//For loop pulls key and string and separates by commas
     for (var i = 0, j = localStorage.length; i < j; i++) {
         var key = localStorage.key(i);
         var value = localStorage.getItem(key);
@@ -135,7 +133,7 @@ function editItem(id) {
     var sightingdate = value[3];
     var cryptidlocation = value[4];
     var cryptidnumber = value[5];
-    var cryptid-type = value[6];
+    var cryptidtype = value[6];
     var encounter = value[7];
     var checkbox;
 
@@ -146,7 +144,7 @@ function editItem(id) {
     $('#sightingdate').val(sightingdate);
     $('#cryptidlocation').val(cryptidlocation);
     $('#cryptidnumber').val(cryptidnumber);    
-    $('#cryptid-type').val(cryptid-type);    
+    $('#cryptidtype').val(cryptidtype);    
     $('#encounter').val(encounter);    
     if ($('#checkbox-news').is(":checked")){
 	checkbox = "Subscriber"
@@ -159,7 +157,7 @@ function editItem(id) {
     var submit = $('#addSighting').css('display', 'none');
     var dataList = $('#data').css('display', 'none');
 
-// Local Storage is updated when you click the Edit button.
+// Local Storage is updated when you click the Edit button
     
     $('#editItem').on('click', function editItem() {
         var reporternamefirst =  $('#reporternamefirst').val();
@@ -168,7 +166,7 @@ function editItem(id) {
         var sightingdate =  $('#sightingdate').val();
         var cryptidlocation =  $('#cryptidlocation').val();
         var cryptidnumber =  $('#cryptidnumber').val();
-        var cryptid-type =  $('#cryptid-type').val();
+        var cryptidtype =  $('#cryptidtype').val();
         var encounter =  $('#encounter').val();
         var checkbox;
         if ($('#checkbox-news').is(":checked")){
@@ -177,12 +175,12 @@ function editItem(id) {
 		checkbox = "Non-Subscriber"
 		};
 
-        var cryptEntry = [reporternamefirst, reporternamelast, reporteremail, sightingdate, cryptidlocation, cryptidnumber, cryptid-type, encounter, checkbox];
+        var cryptEntry = [reporternamefirst, reporternamelast, reporteremail, sightingdate, cryptidlocation, cryptidnumber, cryptidtype, encounter, checkbox];
 
 //Update Local Storage
         localStorage.setItem(cryptId, cryptEntry);
 
-//Reload form page and alert user that the edit was successful.
+//Reload form page and alert user that the edit was successful
         location.reload();
         alert("Your sighting has been updated.");
         
@@ -197,7 +195,7 @@ function editItem(id) {
 
 
 
-// This function deletes a single cryptid record from Local Storage and reloads the page.
+// This function deletes a single cryptid record from Local Storage and reloads the page
 
 function deleteItem(id) {
     var ask = confirm("Are you sure you want to delete this entry? This cannot be undone.");
@@ -214,7 +212,7 @@ function deleteItem(id) {
 
 
 
-// This function clears all data and reloads the page.
+// This function clears all data and reloads the page
 
 function clearLocal() {
     if (localStorage.length === 0) {
@@ -233,7 +231,7 @@ function clearLocal() {
 }
 
 
-//// Validation function doesn't work anymore.
+//// Validation function doesn't work anymore
 
 
 
@@ -267,7 +265,7 @@ var parseCryptidForm = function(data){
 	});
 
 
-//End of Add Item page.
+//End of Add Item page
 
 });
 
